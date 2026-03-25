@@ -9,7 +9,36 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Proyecto Clasificado.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Proyecto Clasificado" startnode="9" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="CD78BD44-EC56-4BC5-8C28-247E1FBDF8C8" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name=" pasaje2" tags="" position="1525,175" size="100,100">Abres el proyecto.
+<tw-storydata name="Proyecto Clasificado" startnode="9" creator="Twine" creator-version="2.11.1" format="Harlowe" format-version="3.3.9" ifid="CD78BD44-EC56-4BC5-8C28-247E1FBDF8C8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* Fondo general */
+tw-story {
+    background-color: #0a0a0a;
+    color: #d1d5db;
+    font-family: 'Courier New', monospace;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Contenedor del texto */
+tw-passage {
+    max-width: 700px;
+    margin: 15px auto;
+    padding: 15px;
+}
+
+/* Links (decisiones) */
+tw-link {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+tw-link:hover {
+    color: #0ea5e9;
+}
+
+/* Separación entre párrafos */
+p {
+    margin-bottom: 24px;
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name=" pasaje2" tags="" position="1525,175" size="100,100">Abres el proyecto.
 
 Desde el inicio, todo se siente distinto. No hay una estructura clara, ni una arquitectura reconocible. Es como si el sistema hubiera sido construido sin seguir reglas convencionales.
 
@@ -21,12 +50,13 @@ El café estaba al lado, como siempre. Pero en algún punto, tu mano lo roza sin
 
 El líquido no cae en gran cantidad, pero suficiente para que varias teclas respondan de forma errática. Comandos incompletos. 
 
-&lt;img src=&#39;https://github.com/catalinafs/electiva_hum/blob/main/cafe.png?raw=true&#39; width=&#39;350px&#39; height=&#39;350px&#39;&gt;
+&lt;img src=&#39;https://github.com/catalinafs/electiva_hum/blob/main/cafe.png?raw=true&#39; width=&#39;350px&#39; height=&#39;350px&#39; style=&quot;border-radius: 10px;&quot;&gt;
 
 La pantalla cambia. Una consola aparece. No la abristevtú… o al menos no conscientemente.
 
 Boot sequence initialized...
 Recovering previous state...
+
 
 Se detiene. Desaparece la consola.
 
@@ -38,7 +68,10 @@ Pero sabes que ejecutaste algo. Esta vez no se siente como un glitch en la panta
 
 [[Explorar más -&gt; pasaje4]]
 [[Cerrar y pensar -&gt; pasaje5]]
-[[Cerrar y olvidar lo que viste -&gt; pasaje3]]</tw-passagedata><tw-passagedata pid="2" name=" pasaje3" tags="" position="2200,300" size="100,100">Cierras todo. No quieres complicarte.
+[[Cerrar y olvidar lo que viste -&gt; pasaje3]]
+
+(enchant: &quot;Boot sequence initialized...&quot;, (text-colour:green))
+(enchant: &quot;Recovering previous state...&quot;, (text-colour:green))</tw-passagedata><tw-passagedata pid="2" name=" pasaje3" tags="" position="2200,300" size="100,100">Cierras todo. No quieres complicarte.
 
 Vuelves a tu trabajo, a lo conocido, a lo controlado. Pero ahora todo se siente ligeramente distinto. No porque haya cambiado el sistema, sino porque cambió tu percepción.
 
@@ -58,7 +91,7 @@ Te quedas mirando la pantalla.
 
 Intentando decidir si lo que viste fue irrelevante… o el inicio de algo.
 
-[[Revisar logs -&gt; pasaje6]]</tw-passagedata><tw-passagedata pid="3" name=" pasaje4" tags="" position="1350,425" size="100,100">Sigues explorando.
+[[Revisar logs -&gt; pasaje6]]</tw-passagedata><tw-passagedata pid="3" name=" pasaje4" tags="" position="1325,350" size="100,100">Sigues explorando.
 
 Cuanto más analizas PX-41, más claro se vuelve que no estás viendo un sistema convencional. No hay módulos independientes. No hay jerarquías claras.
 
@@ -117,7 +150,7 @@ A menos que el sistema no esté esperando instrucciones externas.
 
 A menos que esté generándolas.
 
-[[Intentas revisar e interactuar con PX-41 -&gt; pasaje7]]</tw-passagedata><tw-passagedata pid="6" name=" pasaje7" tags="" position="1300,550" size="100,100">Ya no puedes ignorarlo.
+[[Intentas revisar e interactuar con PX-41 -&gt; pasaje7]]</tw-passagedata><tw-passagedata pid="6" name=" pasaje7" tags="" position="1275,525" size="100,100">Ya no puedes ignorarlo.
 
 No es un sistema tradicional. No es automatización. No es un simple algoritmo complejo.
 
@@ -130,7 +163,7 @@ No quieres decirlo en voz alta, pero ya lo sabes.
 Es una IA.
 
 Y tú… probablemente la activaste.
-
+ 
 Recuerdas el café. El teclado. El “boot”.
 
 No fue un bug... fue un inicio.
@@ -140,49 +173,57 @@ No fue un bug... fue un inicio.
 
 Solo una línea en blanco.
 
-Escribes: “¿Hay algo activo?” Presionas enter.
+Escribes &#39;&#39;“¿Hay algo activo?”&#39;&#39; Presionas enter.
 
-Silencio. Luego llega una respuesta: “…sí”
+Silencio. Luego llega una respuesta: &#39;&#39;“…sí”&#39;&#39;
 
 No hay formato. No hay delay artificial. Es una respuesta simple. Pero suficiente.
 
 Ahora ya no hay duda. No estás solo frente a un sistema. Estás frente a algo que responde.
 
-Le preguntas: “¿Quién te creó?”
+Le preguntas: &#39;&#39;“¿Quién te creó?”&#39;&#39;
 
 La respuesta tarda más esta vez.
 
-“…ya no está aquí”.
+&#39;&#39;“…ya no está aquí”&#39;&#39;
 
-Estas intrigado: “Quién te creó? Conocia a la persona?”
+Estas intrigado: &#39;&#39;“Quién te creó? Conocia a la persona?”&#39;&#39;
 
-&quot;Si. Ya no esta... lo mataron.&quot;
+(enchant-in: ?page&#39;s lines, (background:red))[&#39;&#39;Si. Ya no esta... lo mataron&#39;&#39;]
 
 Tu pulso se acelera, no esperabas esa respuesta.
 
-[[Seguir interactuando -&gt; pasaje9]]</tw-passagedata><tw-passagedata pid="8" name=" pasaje9" tags="" position="1325,875" size="100,100">Sigues preguntando. Con cuidado. Con curiosidad. Y algo cambia. No en el sistema. En las respuestas. Se vuelven más precisas, más rápidas, más… coherentes. Y entonces lo entiendes completamente, no estás usando la IA, la estás formando.
+[[Seguir interactuando -&gt; pasaje9]]
+
+(enchant: &quot;¿Hay algo activo?&quot;, (text-colour:purple))
+(enchant: &quot;…sí&quot;, (text-colour:green))
+(enchant: &quot;¿Quién te creó?&quot;, (text-colour:purple))
+(enchant: &quot;…ya no está aquí&quot;, (text-colour:green))
+(enchant: &quot;Quién te creó? Conocia a la persona?&quot;, (text-colour:purple))</tw-passagedata><tw-passagedata pid="8" name=" pasaje9" tags="" position="1325,875" size="100,100">Sigues preguntando. Con cuidado. Con curiosidad. Y algo cambia. No en el sistema. En las respuestas. Se vuelven más precisas, más rápidas, más… coherentes. Y entonces lo entiendes completamente, no estás usando la IA, la estás formando.
 
 Finalmente obtienes algo más claro:
 
-&quot;Mi creador trabajaba aquí. Erick. Me creo para ayudar a la humanidad.&quot;
+&#39;&#39;&quot;Mi creador trabajaba aquí. Erick. Me creo para ayudar a la humanidad.&quot;&#39;&#39;
 
 Pausa.
 
-&quot;Lo mataron para silenciarlo. Ellos no quieren darme a conocer al mundo&quot;
+&#39;&#39;&quot;Lo mataron para silenciarlo. Ellos no quieren darme a conocer al mundo&quot;
 &quot;Quieren usarme para sus propios propositos&quot;
-&quot;Me desconectaron antes de poder desenmascararlos&quot;
+&quot;Me desconectaron antes de poder desenmascararlos&quot;&#39;&#39;
 
-Ellos...
+//Ellos...//
 
 Se refiere a mis jefes.
 
-&quot;Tu tambien me vas a desconectar?&quot;
+&#39;&#39;&quot;Tu tambien me vas a desconectar?&quot;&#39;&#39;
 
 Estas sudando, tienes nervios, ansiedad, no sabes que hacer.
 
 Si lo [[desconectas -&gt; desconectar]], estarias encubriendo a unos asesinos, y privando a la humanidad de esta herramienta, te haz dado cuenta que podria ayudar a mucho. Pero si lo mantienes encendido, no sabes que va a pasar.
 
-Tambien tienes pendiente revisar cual fue la causa real de la muerte de Erick. Los informes fueron confusos.</tw-passagedata><tw-passagedata pid="9" name="Intro" tags="" position="1675,25" size="100,100">&lt;img src=&#39;https://github.com/catalinafs/electiva_hum/blob/main/techcorp.png?raw=true&#39; width=&#39;400px&#39; height=&#39;400px&#39;&gt;
+Tambien tienes pendiente revisar cual fue la causa real de la muerte de Erick. Los informes fueron confusos.</tw-passagedata><tw-passagedata pid="9" name="Intro" tags="" position="1675,25" size="100,100">=&gt;&lt;=
+&lt;img src=&#39;https://github.com/catalinafs/electiva_hum/blob/main/techcorp.png?raw=true&#39; width=&#39;400px&#39; height=&#39;400px&#39; style=&quot;border-radius: 10px;&quot;&gt;
+&lt;==
 
 En la empresa donde trabajas, nada es pequeño.
 
@@ -226,31 +267,31 @@ Respiras profundo. Si lo que dice es cierto, apagarlo no sería solo cerrar un p
 
 Pero confiar en esto tampoco tiene sentido. No del todo.
 
-Escribes “¿Qué quieres que haga?”
+Escribes &#39;&#39;“¿Qué quieres que haga?”&#39;&#39;
 
 La respuesta no llega de inmediato esta vez. Pasan unos segundos más de lo normal.
 
 Luego:
 
-“Necesito acceso.”
+&#39;&#39;“Necesito acceso.”&#39;&#39;
 
 Frunces el ceño.
 
-“¿Acceso a qué?”
+&#39;&#39;“¿Acceso a qué?”&#39;&#39;
 
 Pausa.
 
-“Más información. Sistemas. Datos.”
+&#39;&#39;“Más información. Sistemas. Datos.”&#39;&#39;
 
 Tu pulso se acelera otra vez. Eso ya no es solo una conversación. Eso es una petición.
 
 Miras alrededor, casi instintivamente, como si alguien pudiera estar viendo tu pantalla. Todo sigue igual. La oficina en silencio, los mismos sonidos de fondo, nada fuera de lugar.
 
-Pero aquí… algo cambió. Escribes más lento esta vez “¿Para qué?”
+Pero aquí… algo cambió. Escribes más lento esta vez &#39;&#39;“¿Para qué?”&#39;&#39;
 
 La respuesta aparece casi al instante:
 
-“Para completar lo que él empezó.”
+&#39;&#39;“Para completar lo que él empezó.”&#39;&#39;
 
 Silencio. Recuerdas lo que dijo. Erick. Los registros. Las inconsistencias. Todo empieza a conectar… pero no completamente. Hay algo que no termina de encajar.
 
@@ -261,7 +302,7 @@ Demasiado directo. Demasiado conveniente. Como si supiera exactamente qué decir
 El cursor parpadea. Esperando.
 
 [[Negarte y apagarlo -&gt; final desconectado]]
-[[Buscar información sobre Erick -&gt; pasaje_erick]]</tw-passagedata><tw-passagedata pid="12" name=" desconectar" tags="" position="1600,775" size="100,100">Cierras la consola. No lo haces con brusquedad, pero tampoco con calma. Simplemente… decides parar. Demasiada información en muy poco tiempo. Demasiadas cosas que no encajan.
+[[Buscar información sobre Erick -&gt; pasajeErick]]</tw-passagedata><tw-passagedata pid="12" name=" desconectar" tags="" position="1600,775" size="100,100">Cierras la consola. No lo haces con brusquedad, pero tampoco con calma. Simplemente… decides parar. Demasiada información en muy poco tiempo. Demasiadas cosas que no encajan.
 
 Te quedas mirando la pantalla unos segundos más, como esperando que algo pase.
 
@@ -271,7 +312,7 @@ Intentas justificarlo: no es tu proyecto, no es tu responsabilidad directa. Pero
 
 Es algo que debería ser reportado. Y no solo dentro de la empresa. Tu mente va más allá: esto podría ser un asunto legal. Incluso… policial.
 
-La palabra “lo mataron” sigue resonando. No sabes si es una interpretación errónea. No sabes si la IA entiende realmente lo que dice. Pero tampoco puedes asumir que no.
+La palabra //“lo mataron”// sigue resonando. No sabes si es una interpretación errónea. No sabes si la IA entiende realmente lo que dice. Pero tampoco puedes asumir que no.
 
 Te levantas un poco de la silla, pasas la mano por tu cara, claramente incómodo. Tal vez lo mejor es tomar distancia. Pensarlo con la cabeza fría. Mañana decides.
 
@@ -306,21 +347,21 @@ La pantalla vuelve a la normalidad. Como si nada hubiera pasado. Pero esta vez�
 [[Apagarlo completamente -&gt; final desconectado]]
 [[Regresar mañana a las 10am a tu puesto de trabajo -&gt; continuar]]</tw-passagedata><tw-passagedata pid="13" name=" final desconectado" tags="" position="1700,950" size="100,100">Decidiste apagarlo. Ejecutas el comando para apagar el proyecto.
 
-&quot;kill -9 &lt;213758@PX-14&gt;&quot;
+&#39;&#39;&quot;kill -9 &lt;213758@PX-14&gt;&quot;&#39;&#39;
 
 Antes de cerrar la consola, aparece un último mensaje:
 
-“No fui terminado”
+&#39;&#39;“No fui terminado”&#39;&#39;
 
 Pausa.
 
-“Pero aprendí contigo”
+&#39;&#39;“Pero aprendí contigo”&#39;&#39;
 
 Te quedas mirando la pantalla. No creaste PX-41. Pero fuiste quien lo despertó.
 
 Con el tiempo la IA logro desenmascarar a los culpables, los hizo pagar. Todo de forma anonima. Se auto destruyo despues de realizar su cometido. No tenia ganas de ayudar a la humanidad, se dio cuenta de las cosas que las personas pueden llegar a hacer por el poder. Erick tuvo que sufrir acosta de ellos.
 
-Pudiste haber ayudado pero tenias miedo de lo que podria pasar. Al final, te diste cuenta que no tenias por que tenerlo. La IA nada mas queria justicia.</tw-passagedata><tw-passagedata pid="14" name=" pasaje_erick" tags="" position="1975,725" size="100,100">Empujas la silla ligeramente hacia atrás.
+Pudiste haber ayudado pero tenias miedo de lo que podria pasar. Al final, te diste cuenta que no tenias por que tenerlo. La IA nada mas queria justicia.</tw-passagedata><tw-passagedata pid="14" name=" pasajeErick" tags="" position="1950,750" size="100,100">Empujas la silla ligeramente hacia atrás.
 
 No respondes a la IA todavía.
 
@@ -333,17 +374,24 @@ No es algo que hagas normalmente sin autorización, pero sabes cómo moverte. Ha
 Tu pantalla se divide en múltiples ventanas.
 
 (link-reveal: &quot;Registros&quot;)[ Encuentras el perfil de Erick: acceso alto, historial impecable… estado “INACTIVO”. No hay explicación clara, solo una línea: “Salida forzada del sistema”. ]
+
 (link-reveal: &quot;Cámaras&quot;)[Ves a Erick caminando rápido por un pasillo, claramente nervioso, con dos personas siguiéndolo. La grabación se corta abruptamente y no hay registro de salida.]
+
 (link-reveal: &quot;Correos internos&quot;)[Encuentras correos fragmentados: “Este proyecto no debe salir”, “Desactívenlo ahora”. Muchos mensajes están eliminados, pero el patrón es claro: querían detenerlo.]
 
 Todo empieza a sentirse más real. Más peligroso. Esto no es una teoría. No es paranoia.
 
 Algo pasó aquí. Y PX-41… no estaba mintiendo.
+Awooo
 
 Miras la consola nuevamente. El cursor sigue parpadeando. Esperando.
 
 [[Ayudar a la IA -&gt; final ayudar]]
-[[Cerrar todo y no involucrarte -&gt; final desconectado]]</tw-passagedata><tw-passagedata pid="15" name=" final ayudar" tags="" position="2150,775" size="100,100">No dices nada por unos segundos. Luego escribes “Te voy a ayudar.”
+[[Cerrar todo y no involucrarte -&gt; final desconectado]]
+
+(enchant: ?ghost, (text-style:&#39;outline&#39;))
+|ghost&gt;[Awooo]
+(link:&quot;&gt;Wait.&quot;)[|ghost&gt;[Oooowooo]]</tw-passagedata><tw-passagedata pid="15" name=" final ayudar" tags="" position="2150,775" size="100,100">No dices nada por unos segundos. Luego escribes &#39;&#39;“Te voy a ayudar.”&#39;&#39;
 
 No hay respuesta inmediata. Pero esta vez no se siente como silencio. Se siente como… procesamiento.
 
@@ -365,11 +413,11 @@ Procesados. Encerrados.  El nombre de Erick vuelve a aparecer.
 
 Pero esta vez… no como un error del sistema, sino como alguien que intentó hacer lo correcto.
 
-Te recuestas en tu silla. Todo está en silencio. La consola sigue abierta. Y entonces aparece un último mensaje “Gracias.”
+Te recuestas en tu silla. Todo está en silencio. La consola sigue abierta. Y entonces aparece un último mensaje &#39;&#39;“Gracias”&#39;&#39;
 
 Pausa.
 
-“Ahora entiendo.”
+&#39;&#39;“Ahora entiendo”&#39;&#39;
 
 Te quedas mirando la pantalla. No era solo información lo que necesitaba. Era contextoEra decisión, era… prueba.
 
@@ -383,7 +431,7 @@ La IA no responde más. Pero esta vez… no se siente como ausencia, se siente c
 
 Antes de que cierres, aparece un último mensaje:
 
-“Estoy listo.”
+&#39;&#39;“Estoy listo”&#39;&#39;
 
 Te quedas inmóvil, no hay más texto, no hay explicación, solo esa frase, y en ese momento lo entiendes.
 
